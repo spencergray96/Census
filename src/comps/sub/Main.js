@@ -1,24 +1,30 @@
 import React, { Component } from 'react';
 import LandingPage from './pages/landing/LandingPage';
 import Browse from './pages/browse/Browse';
+import Answer from './pages/answer/Answer';
 
 class Main extends Component {
     constructor() {
         super();
         this.state = {
             signedIn: false,
-            currentPage: "landing"
-        }
+            currentPage: "landing",
+            selectedSurvey: null
+        };
 
         this.handlePageChange = this.handlePageChange.bind(this);
+        this.handleSurveyChange = this.handleSurveyChange.bind(this);
     }
 
     handlePageChange(data) {
-        var changeToThis;
+        let changeToThis;
 
         switch(data){
             case "switchToBrowse":
                 changeToThis = "browse";
+                break;
+            case "switchToAnswer":
+                changeToThis = "answer";
                 break;
             default:
                 changeToThis = "landing";
@@ -30,25 +36,46 @@ class Main extends Component {
         });
     }
 
+    handleSurveyChange(data) {
+        this.setState({
+            selectedSurvey: data
+        }, ()=>{
+            console.log("made it to MAIN.JS, and the passed in survey is:", this.state.selectedSurvey);
+        });
+    }
+
     render() {
 
-        var comp;
+        let comp;
 
         switch(this.state.currentPage) {
             case "landing":
                 comp = <LandingPage
                     handlePageChange = {this.handlePageChange}
-                />
+                />;
                 break;
             case "browse":
                 comp = <Browse
                     handlePageChange = {this.handlePageChange}
-                />
+                    selectedSurvey = {this.state.selectedSurvey}
+                    handleSurveyChange = {this.handleSurveyChange}
+                />;
+                break;
+            case "answer":
+                comp = <Answer
+                    handlePageChange = {this.handlePageChange}
+                    selectedSurvey = {this.state.selectedSurvey}
+                />;
+                break;
+            default:
+                comp = <LandingPage
+                    handlePageChange = {this.handlePageChange}
+                />;
                 break;
         }
 
         return (
-            <div>
+            <div className="pageContent">
                 {comp}
             </div>
         );

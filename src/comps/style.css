@@ -5,7 +5,7 @@ body {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
     font-family: Oswald !important;
 }
 
@@ -19,11 +19,16 @@ Purple: e4c1f9
 off white: FDFDFD
  */
 
+.enhancedHR {
+    border-width: 5px;
+    border-color: black;
+}
+
 #headerNavigation {
     position: fixed;
     width: 100%;
     height: 80px;
-    background-color: #FDFDFD;
+    background-color: #eeeeee;
     /*padding: 5px;*/
     z-index: 10;
     top: 0;
@@ -99,6 +104,11 @@ off white: FDFDFD
 
 /* pages */
 
+.pageContent {
+    /* accounts for the height of the nav bar */
+    margin-top: 80px;
+}
+
 #landingPage {
     color: white;
     user-select: none;
@@ -119,7 +129,7 @@ off white: FDFDFD
 }
 
 #callToAction {
-    top: 200px;
+    top: 80px;
     float: none;
     margin: 0 auto;
 }
@@ -185,7 +195,73 @@ off white: FDFDFD
     top: -10px;
 }
 
-@media only screen and (max-width: 711px) {
+/* general pages */
+
+.pageTitle {
+    display: table;
+    margin: 0 auto;
+    font-size: 32pt;
+    font-weight: 175;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Survey List Display (browse page) */
+
+#surveyListDisplay {
+    display: table;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#browsePageTitle {
+
+}
+
+.surveyListItem {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.surveyListItemTitle {
+    font-size: 28pt;
+}
+
+.surveyListItemDesc {
+    font-size: 16pt;
+}
+
+.surveyListGoButton {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    font-size: 16pt !important;
+}
+
+.bottomSurveyItemHR {
+    margin-top: 40px;
+    border-width: 3px;
+}
+
+#answerPageDisplay {
+    display: table;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#answerPageTitleInfo {
+    display: table;
+    margin: 0 auto;
+}
+
+.centeredText {
+    display: table;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 725px) {
     #logoTitle {
         display: none;
     }
