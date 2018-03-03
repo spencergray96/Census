@@ -224,10 +224,11 @@ off white: FDFDFD
 .pageTitle {
     display: table;
     margin: 0 auto;
-    font-size: 32pt;
+    font-size: 48pt;
     font-weight: 175;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 /* Survey List Display (browse page) */
@@ -282,8 +283,12 @@ off white: FDFDFD
     text-align: center;
 }
 
-#answerPageDesc {
-    font-size: 16pt !important;
+#answerPageTitle {
+    font-size: 48pt !important;
+}
+
+.pageDesc {
+    font-size: 21pt !important;
     text-align: center;
 }
 
@@ -306,8 +311,60 @@ off white: FDFDFD
     margin-top: 15px;
     margin-bottom: 15px;
     height: auto;
-    font-size: 48pt;
+    font-size: 42pt;
     padding: 20pt;
+}
+
+.mainPageContent {
+    display: table;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#resultsPageTitle {
+    font-size: 48pt;
+}
+
+#statsFromDbDiv {
+    text-align: center;
+    /*background-color: red;*/
+    margin-bottom: 20px;
+}
+
+#totalVotesDisplayDiv {
+    font-size: 28pt;
+    margin-bottom: 20px;
+}
+
+#resultsListDisplayDiv {
+    font-size: 42pt;
+}
+
+.resultItem {
+    margin-bottom: 20px;
+}
+
+#socialTwitterAndYoutube {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24pt;
+}
+
+#twitterSharing {
+    margin-bottom: 20px;
+}
+
+#twitterShareMsg {
+    margin-bottom: 10px;
+}
+
+#youtubeVideoSectionContainer {
+    margin-bottom: 20px;
+}
+
+#youtubeVideoMsg {
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 725px) {

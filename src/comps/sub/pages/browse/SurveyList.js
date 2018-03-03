@@ -5,15 +5,28 @@ class SurveyList extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            selectedSurvey: this.props.selectedSurvey,
             surveyQuestions:[
                 {
                     surveyName: "What's your favourite city?",
                     surveyDesc: "help us figure this out",
                     answers: [
-                        "Vancouver",
-                        "North Vancouver",
-                        "West Vancouver",
-                        "Ladner"
+                        {
+                            answer: "Vancouver",
+                            votes: 56
+                        },
+                        {
+                            answer: "North Vancouver",
+                            votes: 32
+                        },
+                        {
+                            answer: "West Vancouver",
+                            votes: 18
+                        },
+                        {
+                            answer: "Ladner",
+                            votes: 99
+                        }
                     ]
                 },
                 {
@@ -50,8 +63,7 @@ class SurveyList extends Component {
                     surveyName: "What's your favourite color?",
                     surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
                 },
-            ],
-            selectedSurvey: this.props.selectedSurvey
+            ]
         };
 
         this.handleSurveyChange = this.handleSurveyChange.bind(this);

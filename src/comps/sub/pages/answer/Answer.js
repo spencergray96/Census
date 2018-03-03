@@ -41,8 +41,8 @@ class Answer extends Component {
                     <button
                         key={"answerListItem" + i}
                         className="answerListItem transparent_btn_black"
-                        dangerouslySetInnerHTML={{__html: currentAnswers[i]}}
-                        onClick={()=>this.submitAnswer(currentAnswers[i])}
+                        dangerouslySetInnerHTML={{__html: currentAnswers[i].answer}}
+                        onClick={()=>this.submitAnswer(currentAnswers[i].answer)}
                     >
 
                     </button>
@@ -68,7 +68,7 @@ class Answer extends Component {
                         </div>
                         <div
                             id="answerPageDesc"
-                            className="centeredText"
+                            className="centeredText pageDesc"
                             dangerouslySetInnerHTML={{__html: this.state.selectedSurvey.surveyDesc}}>
                         </div>
                     </div>

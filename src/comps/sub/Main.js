@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LandingPage from './pages/landing/LandingPage';
 import Browse from './pages/browse/Browse';
 import Answer from './pages/answer/Answer';
+import Results from './pages/results/Results';
 //import results
 
 class Main extends Component {

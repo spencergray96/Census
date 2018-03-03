@@ -6,7 +6,8 @@ class Browse extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedSurvey: this.props.selectedSurvey
+            selectedSurvey: this.props.selectedSurvey,
+            alreadyAnswered: false
         };
 
         this.handleSurveyChange = this.handleSurveyChange.bind(this);
@@ -14,7 +15,14 @@ class Browse extends Component {
 
     handleSurveyChange(data) {
         this.props.handleSurveyChange(data);
-        this.props.handlePageChange("switchToAnswer");
+
+        //insert check if they have already answered this survey here
+
+        if(!this.state.alreadyAnswered) {
+            this.props.handlePageChange("switchToAnswer");
+        } else {
+            this.props.handlePageChange("switchToResults");
+        }
     }
 
     render() {
