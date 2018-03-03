@@ -367,6 +367,12 @@ off white: FDFDFD
     margin-bottom: 10px;
 }
 
+.fbphoto {
+    height: 100px;
+    width: 100px;
+}
+
+
 @media only screen and (max-width: 725px) {
     #logoTitle {
         display: none;
