@@ -132,6 +132,7 @@ off white: FDFDFD
     top: 80px;
     float: none;
     margin: 0 auto;
+    text-align: center;
 }
 
 #ctaMessage {
@@ -167,6 +168,29 @@ off white: FDFDFD
 .transparent_btn:hover {
     background-color: rgba(255,255,255, 0.3);
     color: #FFF;
+}
+
+.transparent_btn_black {
+    /*display: inline-block;*/
+    padding: 10px 14px;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 120%;
+    background-color: rgba(0,0,0, 0);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    cursor: pointer;
+}
+
+.transparent_btn_black:hover {
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
 }
 
 .loginButton {
@@ -249,16 +273,41 @@ off white: FDFDFD
     display: table;
     margin: 0 auto;
     background-color: white;
+    /*min-height: 1000px;*/
 }
 
 #answerPageTitleInfo {
     display: table;
     margin: 0 auto;
+    text-align: center;
+}
+
+#answerPageDesc {
+    font-size: 16pt !important;
+    text-align: center;
 }
 
 .centeredText {
     display: table;
     margin: 0 auto;
+}
+
+#backToBrowsePageDiv {
+    margin-top: 10px;
+}
+
+#backToBrowsePageButton {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.answerListItem {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    font-size: 48pt;
+    padding: 20pt;
 }
 
 @media only screen and (max-width: 725px) {
@@ -268,5 +317,12 @@ off white: FDFDFD
 
     #logoTitleSmall {
         display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .answerListItem {
+        font-size: 36pt;
+        padding: 30pt;
     }
 }

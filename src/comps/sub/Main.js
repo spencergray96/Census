@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LandingPage from './pages/landing/LandingPage';
 import Browse from './pages/browse/Browse';
 import Answer from './pages/answer/Answer';
+//import results
 
 class Main extends Component {
     constructor() {
@@ -14,6 +15,7 @@ class Main extends Component {
 
         this.handlePageChange = this.handlePageChange.bind(this);
         this.handleSurveyChange = this.handleSurveyChange.bind(this);
+        this.handleAnswerSubmission = this.handleAnswerSubmission.bind(this);
     }
 
     handlePageChange(data) {
@@ -25,6 +27,9 @@ class Main extends Component {
                 break;
             case "switchToAnswer":
                 changeToThis = "answer";
+                break;
+            case "switchToResults":
+                changeToThis = "results";
                 break;
             default:
                 changeToThis = "landing";
@@ -42,6 +47,10 @@ class Main extends Component {
         }, ()=>{
             console.log("made it to MAIN.JS, and the passed in survey is:", this.state.selectedSurvey);
         });
+    }
+
+    handleAnswerSubmission(data) {
+
     }
 
     render() {
@@ -63,6 +72,12 @@ class Main extends Component {
                 break;
             case "answer":
                 comp = <Answer
+                    handlePageChange = {this.handlePageChange}
+                    selectedSurvey = {this.state.selectedSurvey}
+                />;
+                break;
+            case "results":
+                comp = <Results
                     handlePageChange = {this.handlePageChange}
                     selectedSurvey = {this.state.selectedSurvey}
                 />;

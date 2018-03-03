@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e868e1f7-0522-4dba-96e6-215bb3d151bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comps/style.css" afterPath="$PROJECT_DIR$/src/comps/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comps/sub/Main.js" afterPath="$PROJECT_DIR$/src/comps/sub/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js" afterPath="$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js" afterPath="$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js" afterPath="$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/comps/sub/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="212">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -55,8 +54,8 @@
       <file leaf-file-name="LandingPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/LandingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="70">
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -64,11 +63,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleButton.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/GoogleButton.js">
+      <file leaf-file-name="FacebookButton.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/FacebookButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="588">
+              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browse.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -79,23 +90,11 @@
       <file leaf-file-name="SurveyList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="67" column="130" lean-forward="false" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="130" />
+            <state relative-caret-position="193">
+              <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#207#1976#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Browse.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#207#2647#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,8 +103,8 @@
       <file leaf-file-name="Answer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="51" />
+            <state relative-caret-position="232">
+              <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="50" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -116,8 +115,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comps/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+            <state relative-caret-position="663">
+              <caret line="325" column="18" lean-forward="false" selection-start-line="325" selection-start-column="18" selection-end-line="325" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -141,6 +140,11 @@
       <find>HR</find>
       <find>browsePag</find>
       <find>surveyListDisplay</find>
+      <find>callto</find>
+      <find>transparent_btn</find>
+      <find>testfun</find>
+      <find>handlePageChange</find>
+      <find>answerPageDisplay</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,11 +154,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/comps/sub/pages/LandingPage.js" />
+        <option value="$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js" />
         <option value="$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js" />
         <option value="$PROJECT_DIR$/src/comps/style.css" />
         <option value="$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js" />
         <option value="$PROJECT_DIR$/src/comps/sub/Main.js" />
-        <option value="$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js" />
       </list>
     </option>
   </component>
@@ -192,6 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,7 +262,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,24 +293,25 @@
       <workItem from="1519532425676" duration="1812000" />
       <workItem from="1519535602735" duration="1195000" />
       <workItem from="1519629662701" duration="8891000" />
-      <workItem from="1519671179754" duration="5154000" />
+      <workItem from="1519671179754" duration="11742000" />
+      <workItem from="1520045675858" duration="6765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17052000" />
+    <option name="totallyTimeSpent" value="30405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1703125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -331,6 +336,83 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/comps/Content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/LandingPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4896">
+          <caret line="288" column="1" lean-forward="false" selection-start-line="288" selection-start-column="1" selection-end-line="288" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#207#2647#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/comps/Content.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -504,16 +586,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/comps/sub/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/FacebookButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/LandingPage.js" />
     <entry file="file://$PROJECT_DIR$/src/comps/Content.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -533,14 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/comps/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/GoogleButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -551,20 +615,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/LandingPage.js">
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="648">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/LandingPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/landing/FacebookButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="325" column="18" lean-forward="false" selection-start-line="325" selection-start-column="18" selection-end-line="325" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="77" column="41" lean-forward="false" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#207#2647#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/answer/Answer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="51" />
+        <state relative-caret-position="232">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="50" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -573,29 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/comps/sub/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/SurveyList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="67" column="130" lean-forward="false" selection-start-line="67" selection-start-column="65" selection-end-line="67" selection-end-column="130" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#207#1976#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/comps/sub/pages/browse/Browse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="212">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

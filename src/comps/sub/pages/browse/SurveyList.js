@@ -8,11 +8,23 @@ class SurveyList extends Component {
             surveyQuestions:[
                 {
                     surveyName: "What's your favourite city?",
-                    surveyDesc: "help us figure this out"
+                    surveyDesc: "help us figure this out",
+                    answers: [
+                        "Vancouver",
+                        "North Vancouver",
+                        "West Vancouver",
+                        "Ladner"
+                    ]
                 },
                 {
                     surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
+                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey! You're doing your nation a service by helping contribute data to this very important survey! You're doing your nation a service by helping contribute data to this very important survey! You're doing your nation a service by helping contribute data to this very important survey!",
+                    answers: [
+                        "Red",
+                        "Blue",
+                        "Green",
+                        "Purple"
+                    ]
                 },
                 {
                     surveyName: "What's your favourite color?",
@@ -65,13 +77,22 @@ class SurveyList extends Component {
                 <div key={"surveyListItem" + i} className="surveyListItem col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="row">
                         <div className="surveyListItemInfo d-inline-block col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                            <div className="surveyListItemTitle" dangerouslySetInnerHTML={{__html: surveyQuestions[i].surveyName}}>
+                            <div
+                                className="surveyListItemTitle"
+                                dangerouslySetInnerHTML={{__html: surveyQuestions[i].surveyName}}
+                            >
                             </div>
-                            <div className="surveyListItemDesc" dangerouslySetInnerHTML={{__html: surveyQuestions[i].surveyDesc}}>
+                            <div
+                                className="surveyListItemDesc"
+                                dangerouslySetInnerHTML={{__html: surveyQuestions[i].surveyDesc}}
+                            >
                             </div>
                         </div>
                         <div className="surveyListGoButtonDiv d-inline-block col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <button onClick={()=>this.handleSurveyChange(surveyQuestions[i])} className="surveyListGoButton btn btn-success align-middle">
+                            <button
+                                onClick={()=>this.handleSurveyChange(surveyQuestions[i])}
+                                className="surveyListGoButton btn btn-success align-middle"
+                            >
                                 Answer Survey
                             </button>
                         </div>
