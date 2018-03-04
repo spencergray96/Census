@@ -372,6 +372,28 @@ off white: FDFDFD
     width: 100px;
 }
 
+/* IF A BUTTON LOSES IT'S PROPER STYLE, IT'S PROBABLY DUE TO THIS*/
+
+.btn.outline {
+    background: none;
+    padding: 12px 40px;
+}
+.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+    background: #0099cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+/* UNTIL HERE, THANKS FOR KEEPING AN EYE OPEN */
 
 @media only screen and (max-width: 725px) {
     #logoTitle {

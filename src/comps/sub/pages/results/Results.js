@@ -59,9 +59,7 @@ class Results extends Component {
                                 Share these results with Twitter!
                             </div>
                             <div id="twitterShareButtonContainer">
-                                <button>
-                                    This button does nothing yet and is not styled correctly
-                                </button>
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="I just took part in a survey on Does That Make Census!" data-hashtags="DoesThatMakeCensus" data-show-count="false"><button className="tweetBtn btn btn-primary btn-lg outline text-center">Tweet</button></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                         </div>
 
