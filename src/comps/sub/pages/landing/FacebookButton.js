@@ -55,7 +55,6 @@ class FacebookButton extends Component {
                 });
             }
         });
-        this.handlePageChange();
     }
 
     handlePageChange() {
@@ -63,6 +62,11 @@ class FacebookButton extends Component {
     }
 
     render() {
+        
+        if(this.state.fbName !== ""){
+            this.handlePageChange();
+        }
+        
         return (
             <div
                 id="loginWithFacebookButton"
