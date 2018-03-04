@@ -67,8 +67,21 @@ class SurveyList extends Component {
         };
 
         this.handleSurveyChange = this.handleSurveyChange.bind(this);
+        this.componentDidMount = this.componentDidMount.bind(this);
     }
 
+    componentDidMount() {
+        
+        fetch("../../server/get.php").then((resp)=>{
+            console.log(resp);    
+        }).then((json)=>{
+            console.log(json);
+            this.setState({
+                test:json
+            })
+        });
+    }      
+    
     handleSurveyChange(data) {
         this.setState({
             selectedSurvey: data

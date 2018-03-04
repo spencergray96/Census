@@ -11,13 +11,38 @@ class Main extends Component {
         this.state = {
             signedIn: false,
             currentPage: "landing",
-            selectedSurvey: null
+            selectedSurvey: null,
+            test: {}
         };
 
         this.handlePageChange = this.handlePageChange.bind(this);
         this.handleSurveyChange = this.handleSurveyChange.bind(this);
         this.handleAnswerSubmission = this.handleAnswerSubmission.bind(this);
+        this.componentDidMount = this.componentDidMount.bind(this);
     }
+    
+    componentDidMount() {
+        
+        fetch("../../server/getQuestions.php").then((resp)=>{
+            console.log(resp);
+        }).then((json)=>{
+            console.log(json);
+            // I want to change the fetch into an object here
+            this.setState({
+                test:json
+            })
+        });
+        
+//        var xmlhttp = new XMLHttpRequest();
+//        xmlhttp.onreadystatechange = () => {
+//            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+//                console.log(xmlhttp.responseText);
+//            }
+//        };
+//        xmlhttp.open("GET", "http://localhost:8888/server/getQuestions.php", true);
+//        xmlhttp.send();       
+        
+    }    
 
     handlePageChange(data) {
         let changeToThis;
@@ -36,6 +61,7 @@ class Main extends Component {
                 changeToThis = "landing";
                 break;
         }
+        this.componentDidMount();
 
         this.setState({
             currentPage: changeToThis
