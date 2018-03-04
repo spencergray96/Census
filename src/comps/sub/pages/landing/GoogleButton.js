@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { GoogleLogin } from 'react-google-login-component';
 import '../../../style.css';
 
 class GoogleButton extends Component {
@@ -7,6 +8,7 @@ class GoogleButton extends Component {
 
         this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
         this.handlePageChange = this.handlePageChange.bind(this);
+        this.responseGoogle = this.responseGoogle.bind(this);
     }
 
     handleGoogleLogin() {
@@ -17,15 +19,26 @@ class GoogleButton extends Component {
     handlePageChange() {
         this.props.handlePageChange("switchToBrowse");
     }
+    
+    responseGoogle (googleUser) {
+        var id_token = googleUser.getAuthResponse().id_token;
+        var googleId = googleUser.getId()
+        console.log({ googleId });
+        console.log({accessToken: id_token});
+    }
 
     render() {
         return (
             <div
                 id="loginWithGoogleButton"
-                className="transparent_btn loginButton text-center"
-                onClick={this.handleGoogleLogin}
             >
-                Login with Google
+                <GoogleLogin socialId="719562683996-0ah1qkts0ajdt246hp95t14n96f1l35r.apps.googleusercontent.com"
+                     className="transparent_btn loginButton text-center"
+                     scope="profile"
+                     fetchBasicProfile={false}
+                     responseHandler={this.responseGoogle}
+                     buttonText="Login With Google"/>
+               
             </div>
         );
     }
