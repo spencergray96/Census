@@ -7,7 +7,7 @@ use dtmc;
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 05, 2018 at 06:39 AM
+-- Generation Time: Mar 05, 2018 at 09:28 AM
 -- Server version: 5.6.28
 -- PHP Version: 7.0.10
 
@@ -52,15 +52,15 @@ INSERT INTO `answers` (`pKey`, `fKey`, `solution`) VALUES
 
 CREATE TABLE `questions` (
   `pKey` int(50) NOT NULL,
-  `question` varchar(500) NOT NULL,
-  `description` varchar(500) NOT NULL
+  `surveyName` varchar(500) NOT NULL,
+  `surveyDesc` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `questions`
 --
 
-INSERT INTO `questions` (`pKey`, `question`, `description`) VALUES
+INSERT INTO `questions` (`pKey`, `surveyName`, `surveyDesc`) VALUES
 (1, 'What\'s Your Favourite City?', 'Help us figure this out'),
 (2, 'What\'s Your Favourite Colour?', 'You\'re doing your nation a service by helping contribute data to this very important survey! You\'re doing your nation a service by helping contribute data to this very important survey! You\'re doing your nation a service by helping contribute data to this very important survey! You\'re doing your nation a service by helping contribute data to this very important survey!');
 
@@ -102,7 +102,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`pKey`, `email`) VALUES
 (1, 'jamesSmells@farts.ca'),
-(2, 'raymondSucks@vacuums.me');
+(2, 'raymondSucks@vacuums.me'),
+(3, 'dov@cucumbers.eat'),
+(4, 'spencer@gray.com');
 
 --
 -- Indexes for dumped tables
@@ -158,7 +160,7 @@ ALTER TABLE `responses`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `pKey` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pKey` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Constraints for dumped tables
 --
@@ -175,3 +177,4 @@ ALTER TABLE `answers`
 ALTER TABLE `responses`
   ADD CONSTRAINT `responses_ibfk_1` FOREIGN KEY (`email`) REFERENCES `users` (`pKey`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `responses_ibfk_2` FOREIGN KEY (`question`) REFERENCES `questions` (`pKey`) ON DELETE CASCADE ON UPDATE CASCADE;
+

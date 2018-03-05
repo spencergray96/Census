@@ -46,33 +46,49 @@ class SurveyList extends Component {
         this.componentDidMount = this.componentDidMount.bind(this);
     }
 
-//    componentDidMount() {
-//        
-//        fetch("http://localhost:8888/census/server/getQuestions.php").then((resp)=>{
-//            return resp.json();
-//        }).then((json)=>{
-//            this.setState({
-//                surveyQuestions: json
-//            })
-////            console.log(this.state.surveyQuestions);
-//        });
-//        
-//        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
-//            return resp.json();
-//        }).then((json)=>{
-//            console.log(json[0]);
-//            let questionCount = 1;
-//            for(var i = 0; i < this.state.surveyQuestions.length; i++) {
-//                for(var j = 0; j < json.length; j++){
-//                    if(json[j]["fKey"] == questionCount){
-//                        console.log(json[j]);   
-//                    }
-//                }
-//                questionCount++;
-//            }
-//            
-//        });
-//    }
+    componentDidMount() {
+        
+        fetch("http://localhost:8888/census/server/getQuestions.php").then((resp)=>{
+            return resp.json();
+        }).then((json)=>{
+            this.setState({
+                surveyQuestions: json
+            })
+        });
+        
+        fetch("http://localhost:8888/census/server/getResponses.php").then((resp)=>{
+            return resp.json();
+        }).then((json)=>{
+            let temp = json;
+            console.log(temp);
+        });
+        
+        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
+            return resp.json();
+        }).then((json)=>{
+
+            let questionCount = 1;
+            let tempArr = [];
+            
+            console.log(json);
+            
+            for(var i = 0; i < this.state.surveyQuestions.length; i++) {
+                for(var j = 0; j < json.length; j++){
+                    if(json[j]["fKey"] == questionCount){
+                        
+                        tempArr.push(json[j]["solution"]);   
+                    }
+                }
+                console.log(tempArr);
+                this.setState({
+                    surveyQuestions:tempArr
+                });
+                tempArr = [];
+                questionCount++;
+            }
+            
+        });
+    }
     
     handleSurveyChange(data) {
         this.setState({
