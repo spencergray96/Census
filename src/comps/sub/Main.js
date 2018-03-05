@@ -18,23 +18,7 @@ class Main extends Component {
         this.handlePageChange = this.handlePageChange.bind(this);
         this.handleSurveyChange = this.handleSurveyChange.bind(this);
         this.handleAnswerSubmission = this.handleAnswerSubmission.bind(this);
-        this.componentDidMount = this.componentDidMount.bind(this);
-    }
-    
-    componentDidMount() {
-        
-        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
-            console.log(resp);
-            return resp.json();
-        }).then((json)=>{
-            this.setState({
-                test: json
-            })
-            console.log(this.state.test);
-            
-        });
-           
-    }    
+    }  
 
     handlePageChange(data) {
         let changeToThis;
@@ -53,7 +37,6 @@ class Main extends Component {
                 changeToThis = "landing";
                 break;
         }
-        this.componentDidMount();
 
         this.setState({
             currentPage: changeToThis

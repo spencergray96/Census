@@ -72,15 +72,24 @@ class SurveyList extends Component {
 
     componentDidMount() {
         
-        fetch("../../server/get.php").then((resp)=>{
-            console.log(resp);    
+        fetch("http://localhost:8888/census/server/getQuestions.php").then((resp)=>{
+            return resp.json();
         }).then((json)=>{
-            console.log(json);
             this.setState({
-                test:json
+                test: json
             })
+            console.log(this.state.test);
         });
-    }      
+        
+        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
+            return resp.json();
+        }).then((json)=>{
+            this.setState({
+                test: json
+            })
+            console.log(this.state.test);
+        });        
+    }  
     
     handleSurveyChange(data) {
         this.setState({
