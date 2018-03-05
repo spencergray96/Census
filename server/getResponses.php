@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
     $servername = "localhost";
     $username = "root";
@@ -11,9 +12,9 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $statement = $conn->prepare("SELECT * FROM responses");
         $statement->execute();
-
+        
         $result = $statement->fetchAll();
-
+        
         echo json_encode($result);
         
     } catch(PDOException $e) {

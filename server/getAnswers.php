@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
     $servername = "localhost";
     $username = "root";
@@ -13,7 +14,7 @@
         $statement->execute();
         
         $result = $statement->fetchAll();
-
+        
         echo json_encode($result);
         
     } catch(PDOException $e) {

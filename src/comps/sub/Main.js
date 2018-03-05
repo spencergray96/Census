@@ -23,25 +23,17 @@ class Main extends Component {
     
     componentDidMount() {
         
-        fetch("../../server/getQuestions.php").then((resp)=>{
+        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
             console.log(resp);
+            return resp.json();
         }).then((json)=>{
-            console.log(json);
-            // I want to change the fetch into an object here
             this.setState({
-                test:json
+                test: json
             })
+            console.log(this.state.test);
+            
         });
-        
-//        var xmlhttp = new XMLHttpRequest();
-//        xmlhttp.onreadystatechange = () => {
-//            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-//                console.log(xmlhttp.responseText);
-//            }
-//        };
-//        xmlhttp.open("GET", "http://localhost:8888/server/getQuestions.php", true);
-//        xmlhttp.send();       
-        
+           
     }    
 
     handlePageChange(data) {
