@@ -9,7 +9,7 @@ class SurveyList extends Component {
             surveyQuestions:[
                 {
                     surveyName: "What's your favourite city?",
-                    surveyDesc: "help us figure this out",
+                    surveyDesc: "Help us figure this out",
                     answers: [
                         {
                             answer: "Vancouver",
@@ -39,30 +39,6 @@ class SurveyList extends Component {
                         "Purple"
                     ]
                 },
-                {
-                    surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
-                },
-                {
-                    surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
-                },
-                {
-                    surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
-                },
-                {
-                    surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
-                },
-                {
-                    surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
-                },
-                {
-                    surveyName: "What's your favourite color?",
-                    surveyDesc: "You're doing your nation a service by helping contribute data to this very important survey!"
-                },
             ]
         };
 
@@ -70,26 +46,33 @@ class SurveyList extends Component {
         this.componentDidMount = this.componentDidMount.bind(this);
     }
 
-    componentDidMount() {
-        
-        fetch("http://localhost:8888/census/server/getQuestions.php").then((resp)=>{
-            return resp.json();
-        }).then((json)=>{
-            this.setState({
-                test: json
-            })
-            console.log(this.state.test);
-        });
-        
-        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
-            return resp.json();
-        }).then((json)=>{
-            this.setState({
-                test: json
-            })
-            console.log(this.state.test);
-        });        
-    }  
+//    componentDidMount() {
+//        
+//        fetch("http://localhost:8888/census/server/getQuestions.php").then((resp)=>{
+//            return resp.json();
+//        }).then((json)=>{
+//            this.setState({
+//                surveyQuestions: json
+//            })
+////            console.log(this.state.surveyQuestions);
+//        });
+//        
+//        fetch("http://localhost:8888/census/server/getAnswers.php").then((resp)=>{
+//            return resp.json();
+//        }).then((json)=>{
+//            console.log(json[0]);
+//            let questionCount = 1;
+//            for(var i = 0; i < this.state.surveyQuestions.length; i++) {
+//                for(var j = 0; j < json.length; j++){
+//                    if(json[j]["fKey"] == questionCount){
+//                        console.log(json[j]);   
+//                    }
+//                }
+//                questionCount++;
+//            }
+//            
+//        });
+//    }
     
     handleSurveyChange(data) {
         this.setState({
